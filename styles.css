@@ -1,5 +1,5 @@
 @font-face {
-    font-family: 'Gilroy';
+    font-family: 'gilroy';
     src:local("...\buildit\font\gilroy");
 }
 
@@ -13,8 +13,12 @@ html {
 
 body {
     position: relative;
-    font-family: 'Gilroy', sans-serif !important;
+    font-family: 'gilroy', sans-serif !important;
     background: #FFF7F1 !important;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    color: #0F0F0F;
 }
 
 /* ................Styling for navigation................................ */
@@ -55,6 +59,61 @@ body {
     width: 100%;
 }
 
+.hero-gradient img:nth-child(2) {
+    display: none;
+}
+
+.centered {
+    display: none;
+}
+
+/* ................Styling for Project section................................ */
+.projects-heading h2 {
+    font-size: 48px;
+}
+
+.projects-images img {
+    height: 296px;
+    width: 531.78px;
+    border-radius: 10px;
+}
+
+/* ................Styling for what we offer section................................ */
+.what-we-offer {
+    margin-top: 5rem;
+}
+
+.offer {
+    display: grid;
+    gap: 30px;
+    height: 100vh;
+    grid-template-areas: "A A A A    A C C C   C C C C"
+                         "A A A A    A C C C   C C C C"
+                         "B B B B    B C C C   C C C C"
+                         "B B B B    B C C C   C C C C";
+}
+  
+.offer-text-1 {
+    grid-area: A;
+}
+
+.offer-text-1 p, .offer-text-2 p {
+    color: #939393;
+}
+
+.offer-text-1 h5, .offer-text-2 h5  {
+    font-size: 48px;
+    font-weight: bold;
+}
+
+.offer-text-2 {
+    grid-area: B;
+}
+  
+.offer-image {
+    grid-area: C;
+    
+}
 
 
 @media only screen and (max-width: 428px) {
@@ -72,9 +131,76 @@ body {
         display: none;
     }
 
-    .hero-gradient img {
+    .hero-gradient img:nth-child(2) {
+        display: block;
         height: 389px;
         width: 367px;
+    }
+
+    .hero-gradient img:first-child {
+        display: none;
+    }
+
+    .hero-gradient {
+        position: relative;
+        text-align: center;
+        font-size: 36px;
+        color: white;
+    }
+
+    .centered {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        display: block;
+    }
+
+    .projects-heading h2 {
+        font-size: 32px;
+    }
+
+    .projects-images {
+        display: flex !important;
+        flex-wrap: nowrap !important;
+        overflow-x: auto !important;
+    } 
+
+    .project-image-scroll {
+        flex: 0 0 auto !important;
+        margin-right: 3px !important;
+    }
+
+    ::-webkit-scrollbar {
+        display: none !important;
+    }
+
+
+
+
+    .what-we-offer {
+        margin-top: 3rem;
+    }
+    
+    .offer {
+        display: grid;
+        gap: 20px;
+        height: 100vh;
+        grid-template-areas: "A A A A    A A A A   A A A A"
+                             "C C C C    C C C C   C C C C"
+                             "B B B B    B B B B   B B B B";
+    }
+      
+    .offer-text-1 p, .offer-text-2 p {
+        color: #939393;
+        text-align: center;
+        font-size: 14px !important;
+    }
+    
+    .offer-text-1 h5, .offer-text-2 h5  {
+        font-size: 34px;
+        font-weight: bold;
+        text-align: center;
     }
 }
 
