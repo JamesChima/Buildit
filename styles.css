@@ -22,19 +22,23 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 /* ................Styling for navigation................................ */
-.btn-contactus {
-    background-color: #AA05D9 !important;
+.btn-size {
     width: 204px;
     height: 60px;
-    border-radius: 4px;
+    border-radius: 6px;
 }  
 
-.btn-contactus a, .btn-contactus a:hover {
+.btn-colour {
+    background-color: #AA05D9 !important;
+}
+
+
+.btn-colour a, .btn-colour a:hover {
     text-decoration: none;
     color: #FFFFFF;
 }
 
-.btn-contactus:hover, .nav-link:hover  {
+.btn-colour:hover, .nav-link:hover  {
     opacity: 0.7;
 }
 
@@ -81,6 +85,7 @@ h1,h2,h3,h4,h5,h6 {
 /* ................Styling for what we offer section................................ */
 .what-we-offer {
     margin-top: 5rem;
+    min-height: 650px;
 }
 
 .offer {
@@ -111,12 +116,150 @@ h1,h2,h3,h4,h5,h6 {
 }
   
 .offer-image {
+    margin-top: 11rem;
     grid-area: C;
     
 }
 
+/* ................Styling for cards section................................ */
+.card-section {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
 
-@media only screen and (max-width: 428px) {
+.card-1, .card-2, .card-3, .card-4 {
+    width: 278px !important;
+    height: 195px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 134px rgba(0, 0, 0, 0.15);
+    padding: 20px;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.card-1 img, .card-2 img, .card-3 img, .card-4 img {
+    width: 29px;
+    height: 31.73px;
+}
+
+.card-1, .card-2, .card-3, .card-4 {
+    margin-left: 30px;
+}
+
+.card-1 {
+    margin-left: 10px;
+}
+
+/* card colours */
+.card-1 {
+    background: #AA05D9;
+}
+.card-2 {
+    background: #DBC385;
+}
+.card-3 {
+    background: #171717;
+}
+.card-4 {
+    background: #354FC3;
+}
+
+/* ................Styling for how we work section................................ */
+.how-we-work {
+    background-image: url(/assets/what-we-do.png);
+    background-repeat: no-repeat;
+    min-height: 120vh;
+}
+
+.how-we-work-heading {
+    padding-top: 4rem;
+    margin-top: 6rem;
+}
+
+.how-we-work-heading h5 {
+    font-size: 48px;
+}
+
+.how-we-work-heading {
+    margin-bottom: 1rem;
+}
+
+.rounded-corners {
+    border-radius: 50% 50%;
+    border: 1px solid #ffffff;
+    text-align: center;
+    height: 50px;
+    width: 50px;
+    margin-top: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.rounded-corners p {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.how-we-work-card {
+    width: 278px !important;
+    height: 195px;
+}
+
+/* ................Styling for portfolio section................................ */
+.portfolio-item img {
+    width: 559px;
+    height: 419.25px;
+    margin-left: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 64px rgba(0, 0, 0, 0.12);
+}
+
+.portfolio-item h6  {
+    font-size: 20px;
+    font-weight: bold;
+    color: #00A25E;
+    margin-left: 30px;
+    margin-top: 20px;
+}
+
+.portfolio-item p {
+    margin-left: 30px;
+    font-size: 20px;
+    color: #B5B5B5;
+}
+
+
+.portfolio-aeon {
+    background: #FFFFFF;
+    width: 100%;
+    min-height: 459px;
+    margin-top: 20px;
+    margin-left: 30px;
+    margin-bottom: 2rem;
+    background-image: url(/assets/portfolio-img-2.png);
+    background-size: 1200px 470px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 64px rgba(0, 0, 0, 0.12);
+}
+
+.aeon-project {
+    padding: 3rem;
+    padding-top: 9rem;
+}
+
+.cta-button {
+    width: 152px;
+    height: 60px;
+    margin-top: 3rem;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+@media only screen and (max-width: 768px) {
     .btn-contactus {
         width: 161.86px;
         height: 47.61px;
@@ -135,6 +278,8 @@ h1,h2,h3,h4,h5,h6 {
         display: block;
         height: 389px;
         width: 367px;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .hero-gradient img:first-child {
@@ -160,13 +305,13 @@ h1,h2,h3,h4,h5,h6 {
         font-size: 32px;
     }
 
-    .projects-images {
+    .mobile-scroll-items {
         display: flex !important;
         flex-wrap: nowrap !important;
         overflow-x: auto !important;
     } 
 
-    .project-image-scroll {
+    .mobile-scroll {
         flex: 0 0 auto !important;
         margin-right: 3px !important;
     }
@@ -177,9 +322,9 @@ h1,h2,h3,h4,h5,h6 {
 
 
 
-
     .what-we-offer {
         margin-top: 3rem;
+        min-height: 850px;
     }
     
     .offer {
@@ -201,6 +346,45 @@ h1,h2,h3,h4,h5,h6 {
         font-size: 34px;
         font-weight: bold;
         text-align: center;
+    }
+
+    .offer-image {
+        margin-top: 0;
+    }
+
+    .card-1, .card-2, .card-3, .card-4 {
+        box-shadow: none
+    }
+
+    .how-we-work {
+        min-height: 80vh;
+    }
+
+    .rounded-corners {
+        margin: auto;
+    }
+
+    .how-we-work-card {
+        text-align: center;
+        margin-top: 1rem;
+    }
+
+    .how-we-work-heading {
+        text-align: center;
+    }
+
+    .how-we-work-heading h5  {
+        font-size: 37px;
+    }
+
+    .portfolio-item img {
+        width: 350px;
+        height: 262.5px;
+        box-shadow: none;
+    }
+
+    .portfolio-aeon {
+        display: none;
     }
 }
 
