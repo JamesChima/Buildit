@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@600&display=swap');
 @font-face {
     font-family: 'gilroy';
     src:local("...\buildit\font\gilroy");
@@ -258,6 +259,36 @@ h1,h2,h3,h4,h5,h6 {
     transform: translate(-50%, -50%);
 }
 
+.contact-us {
+    background-image: url(/assets/contact-us.png);
+    background-repeat: no-repeat;
+    min-height: 60vh;
+}
+
+/* ................Styling for footer section................................ */
+.footer-contents {
+    margin-top: 4rem;
+    background: #141414;
+}
+
+.font-worksans h6 {
+    font-family: 'Work Sans', sans-serif;
+}
+
+.font-worksans p {
+    color: #AA05D9;
+}
+
+.font-worksans a {
+    text-decoration: none;
+    color: #AA05D9;
+}
+
+.font-worksans a:hover {
+    text-decoration: underline;
+    color: #AA05D9;
+}
+
 
 @media only screen and (max-width: 768px) {
     .btn-contactus {
@@ -386,6 +417,31 @@ h1,h2,h3,h4,h5,h6 {
     .portfolio-aeon {
         display: none;
     }
+
+    .cta-button {
+        margin-top: 0rem;
+    }
+
+    .btn-see-all {
+        margin-top: 3rem;
+    }
+
+    .footer-contents {
+        margin-top: 0;
+    }
+
+    .font-worksans {
+        display: none;
+    }
+
+    .contact-us {
+        min-height: 0;
+    }
+
+    .footer-section {
+        text-align: center;
+    }
+    
 }
 
 @media only screen and (min-width: 280px) and (max-width: 1023px) {
