@@ -289,6 +289,70 @@ h1,h2,h3,h4,h5,h6 {
     color: #AA05D9;
 }
 
+/* ................Styling for contactus page................................ */
+.btn-hidden {
+   visibility: hidden; 
+}
+.contact-form  {
+   margin-top: 4rem;
+}
+
+.form-heading {
+    border-bottom: 1px solid #AA05D9;
+    padding-bottom: 1rem;
+}
+
+.form-heading h2 {
+    font-size: 80px;
+    font-weight: bold;
+    color: #000000;
+}
+
+.form-heading span,  .form-heading a, .form-heading p a i, .form-heading a:hover  {
+    color: #AA05D9;
+}
+
+.form-heading p a {
+    text-decoration: none;
+}
+
+.form-address {
+    margin-top: 2rem;
+}
+
+.form-address p:first-child {
+    font-size: 24px;
+}
+
+.form-fields input[type='text'], .form-fields textarea {
+    margin-top: 2rem;
+    width: 584px;
+    height: 74px;
+    border: 1px solid #AA05D9;
+    background: #E8E8E8;
+    padding: 1.5rem;
+    outline: none;
+}
+
+.form-fields input[type='radio'] {
+    margin-top: 1rem;
+}
+
+.form-fields p {
+    margin-top: 2rem;
+    font-weight: 500;
+}
+
+.form-fields textarea {
+    height: 106px;
+    margin-bottom: 2rem;
+}
+
+.submit-btn {
+    margin-bottom: 2rem;
+}
+
+
 
 @media only screen and (max-width: 768px) {
     .btn-contactus {
@@ -441,6 +505,16 @@ h1,h2,h3,h4,h5,h6 {
     .footer-section {
         text-align: center;
     }
+
+    /* .form-fields input[type='text'], .form-fields textarea {
+        margin-top: 2rem;
+        width: 280px;
+        height: 74px;
+        border: 1px solid #AA05D9;
+        background: #E8E8E8;
+        padding: 1.5rem;
+        outline: none;
+    } */
     
 }
 
