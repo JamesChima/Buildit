@@ -298,7 +298,6 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 .form-heading {
-    border-bottom: 1px solid #AA05D9;
     padding-bottom: 1rem;
 }
 
@@ -316,12 +315,23 @@ h1,h2,h3,h4,h5,h6 {
     text-decoration: none;
 }
 
+.form-heading p i {
+    color: #AA05D9;
+    margin-left: 4rem;
+}
+
+.line {
+    border-bottom: 1px solid #AA05D9;
+    width: 730px;
+}
+
 .form-address {
     margin-top: 2rem;
 }
 
 .form-address p:first-child {
     font-size: 24px;
+    color: #AA05D9;
 }
 
 .form-fields input[type='text'], .form-fields textarea {
