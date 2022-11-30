@@ -293,12 +293,21 @@ h1,h2,h3,h4,h5,h6 {
 .btn-hidden {
    visibility: hidden; 
 }
+
 .contact-form  {
    margin-top: 4rem;
 }
 
+.menu-icon {
+    display: none;
+}
+
 .form-heading {
     padding-bottom: 1rem;
+}
+
+.form-heading p, .form-address p, .form-address-2 p, .form-details p, label {
+    color: #939393;
 }
 
 .form-heading h2 {
@@ -307,7 +316,7 @@ h1,h2,h3,h4,h5,h6 {
     color: #000000;
 }
 
-.form-heading span,  .form-heading a, .form-heading p a i, .form-heading a:hover  {
+.form-heading span, .form-heading a, .form-heading p i, .form-heading a:hover  {
     color: #AA05D9;
 }
 
@@ -316,7 +325,6 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 .form-heading p i {
-    color: #AA05D9;
     margin-left: 4rem;
 }
 
@@ -327,6 +335,10 @@ h1,h2,h3,h4,h5,h6 {
 
 .form-address {
     margin-top: 2rem;
+}
+
+.form-address-2 {
+    display: none;
 }
 
 .form-address p:first-child {
@@ -382,7 +394,7 @@ h1,h2,h3,h4,h5,h6 {
     .hero-gradient img:nth-child(2) {
         display: block;
         height: 389px;
-        width: 367px;
+        width: 700px;
         margin-left: auto;
         margin-right: auto;
     }
@@ -515,21 +527,49 @@ h1,h2,h3,h4,h5,h6 {
     .footer-section {
         text-align: center;
     }
-
-    /* .form-fields input[type='text'], .form-fields textarea {
-        margin-top: 2rem;
-        width: 280px;
-        height: 74px;
-        border: 1px solid #AA05D9;
-        background: #E8E8E8;
-        padding: 1.5rem;
-        outline: none;
-    } */
     
+    .form-fields textarea {
+        height: 133px;
+        margin-bottom: 2rem;
+    }
+
+    .line {
+        width: 100%;
+    }
+
+    .form-fields p {
+        margin-top: 0;
+    }
+
+    .form-address {
+        display: none;
+    }
+
+    .form-address-2 {
+        display: block;
+    }
+
+    .form-address-2 p:first-child {
+        font-size: 24px;
+    }
+
+    .btn-hidden {
+        display: none; 
+    }   
+
+     .menu-icon {
+        color: #AA05D9;
+        display: block;
+    }
+
+    .menu-icon:hover {
+        color: #AA05D9;
+    }
 }
 
 @media only screen and (min-width: 280px) and (max-width: 1023px) {
     .navbar-menu-items {
         display: none;
     }
+
 }
