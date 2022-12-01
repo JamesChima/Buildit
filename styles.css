@@ -349,7 +349,7 @@ h1,h2,h3,h4,h5,h6 {
 .form-fields input[type='text'], .form-fields textarea {
     margin-top: 2rem;
     width: 584px;
-    height: 74px;
+    height: 50px;
     border: 1px solid #AA05D9;
     background: #E8E8E8;
     padding: 1.5rem;
@@ -527,6 +527,11 @@ h1,h2,h3,h4,h5,h6 {
     .footer-section {
         text-align: center;
     }
+
+    .contact-form, .con-list, .form-fields {
+        padding-left: 1.5rem !important;
+        padding-right: 1.5rem !important;
+     }
     
     .form-fields textarea {
         height: 133px;
@@ -547,10 +552,12 @@ h1,h2,h3,h4,h5,h6 {
 
     .form-address-2 {
         display: block;
+        margin-top: 4rem;
     }
 
     .form-address-2 p:first-child {
         font-size: 24px;
+    
     }
 
     .btn-hidden {
